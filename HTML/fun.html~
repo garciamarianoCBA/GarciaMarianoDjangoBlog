@@ -1,0 +1,27 @@
+<html>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<head>
+<title>F U N</title>
+<body-background: url("Img/carita.jpg") />
+<LINK REL="SHORTCUT ICON" HREF="Img/smile.png"> 
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="boton_magico">
+<input type="button" id="magico" value="Clickeame si puedes" onmouseover="troll()" onclick="win()" ></input>
+</div>
+</body>
+
+</html>
+<script>
+    function troll(){
+        document.getElementById("magico").style.marginTop = Math.floor((Math.random()*600) + 1);
+        document.getElementById("magico").style.marginLeft = Math.floor((Math.random()*600) + 1);
+    }
+    function win(){
+        alert("¡Lograste hacer dar con el 'click'!");
+        location.href="PyU.html";
+    }
+</script>

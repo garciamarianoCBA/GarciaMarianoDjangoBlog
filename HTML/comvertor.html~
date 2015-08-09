@@ -1,0 +1,196 @@
+<HTML> 
+<HEAD> 
+	<TITLE>C O N V E R T O R</TITLE> 
+	<link rel = "stylesheet" href = "css/style.css" />
+	<LINK REL="SHORTCUT ICON" HREF="doc.ico"> 
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+</HEAD> 
+<BODY> 
+
+<div id='cssmenu'>
+<ul>
+   <li><a href='mipagina.html'>Home</a></li>
+   <li><a href='CV.html'>Mi Curriculum</a></li>
+   <li><a href='recetas.html'>Recetas</a></li>
+   <li  class='active'><a href='PyU.html'>Programas y Utilidades</a></li>
+   <li><a href='contacto.html'>Contactame</a></li>
+</ul>
+</div>
+
+
+<FORM>
+ <div id="convertor">
+
+<H1>Conversor de moneda</H1> 
+
+	Quiero convertir <input type="text" id="monto"> <SELECT id="MonedaOrigen" SIZE="1"> 
+	   <OPTION selected>Moneda de Origen</OPTION>
+	   <OPTION VALUE="1">Pesos Argentinos </OPTION> 
+	   <OPTION VALUE="2">Dolares </OPTION> 
+	   <OPTION VALUE="3">Euros </OPTION> 
+	   <OPTION VALUE="4">Pesos Uruguayos</OPTION>
+	   <OPTION VALUE="5">Pesos Chilenos</OPTION>
+	</SELECT> 
+
+	a <SELECT id="MonedaFinal" SIZE="1"> 
+	   <OPTION selected>Moneda a Combertir</OPTION>
+	   <OPTION VALUE="1">Pesos Argentinos </OPTION> 
+	   <OPTION VALUE="2">Dolares </OPTION> 
+	   <OPTION VALUE="3">Euros </OPTION> 
+	   <OPTION VALUE="4">Pesos Uruguayos</OPTION>
+	   <OPTION VALUE="5">Pesos Chilenos</OPTION>
+
+	</SELECT> 
+
+
+
+	<br><p>
+	<input type="reset" value="Limpiar" />
+	<input type="button" id="botoncinho" value="Convertir" onclick="cambio()"/> <span id="span">00</span>
+		</p></br>
+
+
+
+	</FORM> 
+</div>
+</BODY> 
+</HTML> 
+
+<script>
+	function cambio(){
+
+	var seleccion1 = document.getElementById("MonedaOrigen");
+	var valorSeleccion1 =seleccion1.options[seleccion1.selectedIndex].value;
+
+	var seleccion2 = document.getElementById("MonedaFinal"); 
+	var valorSeleccion2 = seleccion2.options[seleccion2.selectedIndex].value;
+	console.log(valorSeleccion1);
+	 console.log(valorSeleccion2);
+	var valorDivisa = 0.0;
+	
+                switch(parseInt(valorSeleccion1)) {
+                    case 1:
+                       
+                        switch(parseInt(valorSeleccion2)) {
+                            case 1:
+                                valorDivisa=1;
+                                break;
+                            case 2:
+                                valorDivisa=0.11231;
+                                break;
+                            case 3:
+                                valorDivisa=0.10396;
+                                break;    
+                            case 4:
+                                valorDivisa=68.540;
+                                break;
+                            case 5:
+                                valorDivisa=2.9911;
+                                break;
+                            case 0:
+                                alert("Debe Seleccionar una Divisa");
+                                break;
+                        }
+                        break;
+                    case 2:
+                        switch(parseInt(valorSeleccion2)) {
+                            case 1:
+ console.log("enter");
+                                valorDivisa=8.8968;
+                                break;
+                            case 2:
+                                valorDivisa=1.0;
+                                break;
+                            case 3:
+                                valorDivisa=0.92687;
+                                break;    
+                            case 4:
+                                valorDivisa=609.79;
+                                break;
+                            case 5:
+                                valorDivisa=26.611;
+                                break;
+                            case 0:
+                                alert("Debe Seleccionar una Divisa");
+                                break;
+                        }
+                        break;
+                    case 3:
+                        switch(parseInt(valorSeleccion2)) {
+                            case 1:
+                                valorDivisa=9.5988;
+                                break;
+                            case 2:
+                                valorDivisa=1,0755;
+                                break;
+                            case 3:
+                                valorDivisa=1;
+                                break;    
+                            case 4:
+                                valorDivisa=657.90;
+                                break;
+                            case 5:
+                                valorDivisa=28.711;
+                                break;
+                            case 0:
+                                alert("Debe Seleccionar una Divisa");
+                                break;
+                        }
+                        break;    
+                    case 4:
+                        switch(parseInt(valorSeleccion2)) {
+                            case 1:
+                                valorDivisa=0.014590;
+                                break;
+                            case 2:
+                                valorDivisa=0.0016400;
+                                break;
+                            case 3:
+                                valorDivisa=0.0015200;
+                                break;    
+                            case 4:
+                                valorDivisa=1;
+                                break;
+                            case 5:
+                                valorDivisa=0.043640;
+                                break;
+                            case 0:
+                                alert("Debe Seleccionar una Divisa");
+                                break;
+                        }
+                        break;
+                    case 5:
+                        switch(parseInt(valorSeleccion2)) {
+                            case 1:
+                                valorDivisa=0.33433;
+                                break;
+                            case 2:
+                                valorDivisa=0.037580;
+                                break;
+                            case 3:
+                                valorDivisa=0.034830;
+                                break;    
+                            case 4:
+                                valorDivisa=22.915;
+                                break;
+                            case 5:
+                                valorDivisa=1;
+                                break;
+                            case 0:
+                                alert("Debe Seleccionar una Divisa");
+                                break;
+                        }
+                        break;
+                    case 0:
+                        alert("Debe Seleccionar una Divisa");
+                        break;
+                }
+
+                var moneda = document.getElementById("monto");
+                var resultado = eval(parseFloat(moneda.value)*valorDivisa);
+		var span = document.getElementById("span");
+                span.innerHTML=resultado;
+                console.log(moneda.value+" * "+ valorDivisa+" = "+resultado);
+            }
+</script>

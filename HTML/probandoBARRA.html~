@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Barra </title>
+<link rel = "stylesheet" href = "css/style.css" />
+
+<style type="text/css">
+
+   </style>
+</head>
+
+<body>
+
+
+<div id="navegador">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Mi curriculum</a></li>
+<li><a href="#">Contactame</a></li>
+
+</ul>
+</div>
+
+</body>
+</html>

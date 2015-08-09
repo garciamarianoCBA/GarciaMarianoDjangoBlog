@@ -1,0 +1,46 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+
+<html>
+
+<head>
+<title> Blog GARCIA M </title>
+<link rel = "stylesheet" href = "css/style.css" />
+<LINK REL="SHORTCUT ICON" HREF="Img/doc.ico"> 
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'>Home</a></li>
+   <li><a href='CV.html'>Mi Curriculum</a></li>
+   <li><a href='recetas.html'>Recetas</a></li>
+   <li><a href='PyU.html'>Programas y Utilidades</a></li>
+   <li><a href='contacto.html'>Contactame</a></li>
+</ul>
+</div>
+
+<h1>  <DIV ALIGN=center> Mi Blog Personal </DIV>  </h1>
+
+<article><h2>Descubri iOS 8</h2>
+<img src="Img/ios.jpg" width='700' height='339'>
+<br><p>iOS es el cerebro del iPhone, el iPad y el iPod touch. <br>Viene con apps que te ayudan con las cosas que haces todos los días<br> y hasta con las que no sabías que podías hacer. <br>Todo de forma fácil, intuitiva y divertida.  <br><a href="https://www.apple.com/es/ios/">Noticia completa</a></br></p> 
+</article>
+
+<article><h2>Claro no venderá más equipos Motorola en América latina</h2>
+<img src="Img/motog.jpg"/>
+<br><p>La medida habría sido tomada luego de que América Movil rompiera relaciones <br> con el fabricante de teléfonos móviles. En Argentina, los productos ya no pueden adquirirse <br> a través de la tienda online de la operadora. <br><a href="http://www.lavoz.com.ar/tecnologia/claro-no-vendera-mas-equipos-motorola-en-america-latina">Ver más</a></br></p> 
+</article>
+
+<article><h2>El nuevo MacBook </h2>
+<img src="Img/mac.jpg" width='700' height='339'>
+<br><p>Con el nuevo MacBook nos propusimos lo imposible: diseñar el portátil Mac más compacto<br> sin tener que renunciar a nada. Por eso reinventamos cada elemento hasta hacerlo<br> no solo extremadamente fino y ligero, sino también mejor. <br>El resultado es mucho más que un nuevo portátil: es el futuro del portátil. </br> <a href="https://www.apple.com/es/macbook/">Noticia completa</a></p>
+</article>
+
+
+</body>
+
+
+</html>

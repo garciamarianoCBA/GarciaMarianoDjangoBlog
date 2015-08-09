@@ -1,0 +1,91 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<html>
+
+<head>
+<title>C R O N O M E T R O</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<LINK REL="SHORTCUT ICON" HREF="Img/doc.ico"> 
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id='cssmenu'>
+<ul>
+   <li><a href='mipagina.html'>Home</a></li>
+   <li><a href='CV.html'>Mi Curriculum</a></li>
+   <li><a href='recetas.html'>Recetas</a></li>
+   <li class='active'><a href='PyU.html'>Programas y Utilidades</a></li>
+   <li><a href='contacto.html'>Contactame</a></li>
+</ul>
+</div>
+
+<h1>  <DIV ALIGN=center>Cronometro</DIV>  </h1>
+
+<article><div class="content">
+<h4><span id="horas">00</span>:<span id="minutos">00</span>:<span id="segundos">00</span></h4>
+<br>
+<input type="button" id="start" value="Comenzar" onclick="startCrono()" />
+<input type="button" id="stop" value="Detener" onclick="stopCrono()" disabled/>
+</div></article>
+       
+</body>
+</html>
+
+<script>
+    var crono;
+
+    function startCrono(){
+        document.getElementById("start").disabled=true;
+        document.getElementById("stop").disabled=false;
+        
+        var horasElem = document.getElementById("horas");
+        var minutosElem = document.getElementById("minutos");
+        var segundosElem = document.getElementById("segundos");
+        
+        var horas;
+        var minutos;
+        var segundos;
+
+        if(horasElem.innerHTML!=0 | minutosElem.innerHTML!=0 | segundosElem.innerHTML!=0){
+            horas = horasElem.innerHTML;
+            minutos = minutosElem.innerHTML;
+            segundos = segundosElem.innerHTML;
+        }else{
+            horas = 0;
+            minutos = 0;
+            segundos = 0;
+        }
+
+        crono = window.setInterval(function(){
+            if(segundos!=60){
+                segundos++;
+
+            }else{
+                segundos=00;
+                minutos++;
+
+                if(minutos==60){
+                    minutos=00;
+                    horas++;
+                    if(horas==24){
+                        horas=00;
+                    }
+                }
+            }
+
+            horasElem.innerHTML=horas;
+            minutosElem.innerHTML=minutos;
+            segundosElem.innerHTML=segundos;
+
+        },1000);
+    }
+
+    function stopCrono(){
+        document.getElementById("stop").disabled=true;
+        document.getElementById("start").disabled=false;
+        document.getElementById("start").value="Continuar";
+        clearInterval(crono);
+    }
+
+</script>

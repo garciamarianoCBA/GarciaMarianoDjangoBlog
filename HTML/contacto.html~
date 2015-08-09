@@ -1,0 +1,55 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+
+<html>
+
+<head>
+<title> Formulario de Contacto </title>
+<link rel = "stylesheet" href = "css/style.css" />
+<LINK REL="SHORTCUT ICON" HREF="Img/doc.ico"> 
+<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id='cssmenu'>
+<ul>
+   <li><a href='mipagina.html'>Home</a></li>
+   <li><a href='CV.html'>Mi Curriculum</a></li>
+   <li><a href='recetas.html'>Recetas</a></li>
+   <li><a href='PyU.html'>Programas y Utilidades</a></li>
+   <li class='active'><a href='#'>Contactame</a></li>
+</ul>
+</div>
+
+
+<h1> <DIV ALIGN=center> Contactate conmigo </DIV>  </h1>
+
+<br><DIV ALIGN=center><a href="https://www.facebook.com/mariano.garcia.9028" target="_blank"><img alt="Sígueme en MI RED SOCIAL" title="Sigueme en Facebook" src="Img/fb.png" width='40' height='40' /></a></DIV></br>
+
+<br><DIV ALIGN=center><a href="https://twitter.com/GarciaMarianok" target="_blank"><img alt="Sígueme en MI RED SOCIAL" title="Sigueme en Twitter" src="Img/tw.png" width='60' height='60' /></a></DIV></br>
+
+<br><DIV ALIGN=center><a href="https://instagram.com/garcia__mariano/" target="_blank"><img alt="Sígueme en MI RED SOCIAL" title="Sigueme en Instagram" src="Img/inst.png" width='60' height='60' /></a></DIV></br>
+
+<br><DIV ALIGN=center><img src="Img/wsp.png" widht=35 height=35/></DIV></br>
+<b> <DIV ALIGN=center> 351 4 592 216 </b></DIV>
+
+
+
+<DIV ALIGN=center><a id="foxyform_embed_link_221591" href="http://es.foxyform.com/">foxyform</a>
+<script type="text/javascript">
+(function(d, t){
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.src = "http://es.foxyform.com/js.php?id=221591&sec_hash=50121e7a041&width=350px";
+   s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script></DIV>
+
+
+
+
+</body>
+
+
+</html>	

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+    <head>
+     <title>I M A G E N E S</title>
+	 <link rel = "stylesheet" href = "css/style.css" />
+	 <LINK REL="SHORTCUT ICON" HREF="doc.ico">   
+	 <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body onload="cambiar()">
+        <div class="header">
+
+ <div id='cssmenu'>
+<ul>
+   <li><a href='mipagina.html'>Home</a></li>
+   <li><a href='CV.html'>Mi Curriculum</a></li>
+   <li><a href='recetas.html'>Recetas</a></li>
+   <li  class='active'><a href='PyU.html'>Programas y Utilidades</a></li>
+   <li><a href='contacto.html'>Contactame</a></li>
+</ul>
+</div>
+
+
+        <div class="content" align="center">
+            <h3>Imagenes Aleatorias</h3>
+            <progress id="barra" max="100" value="100"></progress><br><br>
+            <img id="img" src="Img/loading.gif" width="20%"/>
+
+        </div>         
+    </body>
+</html>
+
+<script>
+    var imagen;
+    var porcentaje;
+    function cambiar(){
+        var barra = document.getElementById("barra");
+        var img = document.getElementById("img");
+        var cant = 100;
+        
+        imagen = window.setInterval(function(){
+            var random = Math.floor((Math.random() * 7) + 1);
+            img.src="Img/"+random+".png";
+        },5000);
+        
+        porcentaje = window.setInterval(function(){
+            if(cant!=20){
+                cant=cant-20;
+            }else{
+                cant=100;
+            }
+            barra.value=cant;
+        },1000);
+    }
+</script>
